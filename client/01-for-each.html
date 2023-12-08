@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div id="app">
+  <script>
+   const plate = [
+    { meet: '🐮', foot: '🍔' },
+    { meet: '🐟', foot: '🍥' },
+    { meet: '🐷', foot: '🥪' },
+    { meet: '🐔', foot: '🍗' }
+   ];
+   const app = document.getElementById('app');
+   const list = plate.map(product => {
+    return`<li>${product.meet} - ${product.foot}</li>`;
+   });
+   app.innerHTML = list.join('')
+  </script>
+ </div>
+</body>
+</html>
