@@ -19,4 +19,4 @@ meets.map(meet => {
  }
 })
 
-return foot
+console.log(foot)
